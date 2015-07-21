@@ -1,0 +1,99 @@
+.toolbar {
+  width: 52px;
+  position: fixed;
+  left: 50%;
+  bottom: 15px;
+  margin-left: -26px;
+}
+.nav-item {
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  display: inline-block;
+  width: 100%;
+  height: 52px;
+  background: url("../img/toolbar.png") no-repeat;
+  -webkit-transition: background-position 0.5s;
+  -moz-transition: background-position 0.5s;
+  -ms-transition: background-position 0.5s;
+  -o-transition: background-position 0.5s;
+  transition: background-position 0.5s;
+}
+.nav-item:nth-child(1) {
+  background-position: 0 -673px;
+}
+.nav-item:nth-child(1):hover {
+  background-position: 0 -736px;
+}
+.nav-item:nth-child(2) {
+  background-position: 0 -550px;
+}
+.nav-item:nth-child(2):hover {
+  background-position: 0 -612px;
+}
+.nav-item:nth-child(2):hover .big-pic {
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.nav-item:nth-child(3) {
+  background-position: 0 -426px;
+}
+.nav-item:nth-child(3):hover {
+  background-position: 0 -488px;
+}
+.nav-item:nth-child(4) {
+  background-position: 0 -798px;
+}
+.nav-item:nth-child(4):hover {
+  background-position: 0 -859px;
+}
+.nav-item:nth-child(4):hover .big-pic {
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.nav-item .big-pic {
+  position: absolute;
+  right: 46px;
+  bottom: -8px;
+  z-index: 100;
+  width: 172px;
+  height: 210px;
+  display: inline-block;
+  background: url("../img/toolbar.png") no-repeat;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform-origin: right bottom;
+  -moz-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  -o-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -webkit-transform: scale(0.01);
+  -moz-transform: scale(0.01);
+  -ms-transform: scale(0.01);
+  -o-transform: scale(0.01);
+  transform: scale(0.01);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.nav-item-weixin .big-pic {
+  background-position: 0 0;
+}
+.nav-item-app .big-pic {
+  background-position: 0 -208px;
+}
+
+/*# sourceMappingURL=index.css.map */

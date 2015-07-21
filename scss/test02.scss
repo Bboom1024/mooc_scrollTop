@@ -1,0 +1,89 @@
+@import "mixin/mixin";
+@import "mixin/font";
+$toolWidth: 52px;
+
+@mixin rect() {
+    width: $toolWidth;
+    height: $toolWidth;
+}
+
+.top-back {
+    width: $toolWidth;
+    position: fixed;
+    left: 50%;
+    bottom: 15px;
+    maring-left: -($toolWidth / 2);
+    
+    @at-root .nav-item {
+        display: inline-block;
+        position: relative;
+        left: 0;
+        top: 0;
+        @include rect();
+        text-align: center;
+        font-size: 30px;
+        text-decoration: none;
+        
+        @at-root .nav-warp {
+            display: inline-block;
+            position: relative;
+            left: 0;
+            top: 0;
+            @include rect();
+            overflow: hidden;
+
+            .nav-icon {
+                top: 0;
+                line-height: $toolWidth;
+                background-color: #d0d6d9;
+                @include transition(top 0.5s);
+            }
+            .nav-text {
+                top: $toolWidth;    
+                padding-top: 10px;
+                background-color: #98a1a6;
+                font-style: normal;
+                font-size: 15px;          
+            }
+        }
+
+        &:hover {
+            .nav-icon {
+                top: -$toolWidth;
+            }
+            .nav-text {
+                top: 0;
+            }
+        };
+
+        &:nth-child(1):hover .big-pic{
+            @include opacity(1);
+            @include transform(scale(1));
+        };
+        &:nth-child(3):hover .big-pic{
+            @include opacity(1);
+            @include transform(scale(1));
+        };
+    }
+}
+.nav-icon,.nav-text  {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    @include rect();
+    color: #ffffff; 
+    @include transition(top 0.5s);
+}
+.big-pic {
+    position: absolute;
+    right: $toolWidth;
+    bottom: 0;
+    display: inline-block;
+    width: 170px;
+    height: 210px;
+    background: url('../img/toolbar_img.png') no-repeat;
+    @include opacity(0);
+    @include transform(scale(0.01));
+    @include transform-origin(right bottom);
+    @include transition(all 0.5s);
+}

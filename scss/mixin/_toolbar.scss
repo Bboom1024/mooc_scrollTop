@@ -1,0 +1,84 @@
+$toolWidth: 52px;
+$bigPicWidth: 172px;
+$bigPicHeight: 210px;
+
+@mixin item-background($original, $hover) {
+    background-position: 0 $original;
+    &:hover {
+        background-position: 0 $hover;
+    }
+}
+
+@mixin tool-pic() {
+    background: url('../img/toolbar.png') no-repeat;
+}
+
+.top-back {
+    width: $toolWidth;
+    position: fixed;
+    left: 50%;
+    bottom: 15px;
+    margin-left: -($toolWidth / 2);
+    
+    @at-root .nav-item {
+        position: relative;
+        left: 0;
+        top: 0;
+        z-index: 200;
+        display: inline-block;
+        width: 100%;
+        height: $toolWidth;
+        @include tool-pic();
+        @include transition(background-position 0.5s);
+
+        &:nth-child(1) {
+            @include item-background(-426px, -488px);
+            &:hover {
+                .big-pic {
+                    @include opacity(1);
+                    @include transform(scale(1));
+                }
+            }
+        }
+        &:nth-child(2) {
+            @include item-background(-550px, -612px);
+        }
+        &:nth-child(3) {
+            @include item-background(-673px, -736px);
+            &:hover {
+                .big-pic {
+                    @include opacity(1);
+                    @include transform(scale(1));
+                }
+            }
+        }
+        &:nth-child(4) {
+            @include item-background(-798px, -859px);
+        }
+
+        .big-pic {
+            position: absolute;
+            right: $toolWidth - 6;
+            bottom: -8px;
+            z-index: 100;
+            width: $bigPicWidth;
+            height: $bigPicHeight;
+            display: inline-block;
+            @include tool-pic();
+            @include opacity(0);
+            @include transform-origin(right bottom);  //定义基点,这样就可以由右下角开始变化
+            @include transform(scale(0.01));
+            @include transition(all 0.5s);
+        }
+    }
+    @at-root .nav-item-weixin {
+        .big-pic {
+            background-position: 0 0;
+        }
+    }
+    @at-root .nav-item-app {
+        .big-pic {
+            background-position: 0 -208px;
+        }
+    }
+}

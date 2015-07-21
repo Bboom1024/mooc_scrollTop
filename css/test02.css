@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?v5hufc");
+  src: url("fonts/icomoon.eot?#iefixv5hufc") format("embedded-opentype"), url("fonts/icomoon.ttf?v5hufc") format("truetype"), url("fonts/icomoon.woff?v5hufc") format("woff"), url("fonts/icomoon.svg?v5hufc#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chat-3:before {
+  content: "\e600";
+}
+
+.icon-align-top:before {
+  content: "\e601";
+}
+
+.icon-wechat:before {
+  content: "\e602";
+}
+
+.icon-mobile:before {
+  content: "\e603";
+}
+
+.top-back {
+  width: 52px;
+  position: fixed;
+  left: 50%;
+  bottom: 15px;
+  maring-left: -26px;
+}
+.nav-item {
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 52px;
+  height: 52px;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+}
+.nav-warp {
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+}
+.nav-warp .nav-icon {
+  top: 0;
+  line-height: 52px;
+  background-color: #d0d6d9;
+  -webkit-transition: top 0.5s;
+  -moz-transition: top 0.5s;
+  -ms-transition: top 0.5s;
+  -o-transition: top 0.5s;
+  transition: top 0.5s;
+}
+.nav-warp .nav-text {
+  top: 52px;
+  padding-top: 10px;
+  background-color: #98a1a6;
+  font-style: normal;
+  font-size: 15px;
+}
+.nav-item:hover .nav-icon {
+  top: -52px;
+}
+.nav-item:hover .nav-text {
+  top: 0;
+}
+.nav-item:nth-child(1):hover .big-pic {
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.nav-item:nth-child(3):hover .big-pic {
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+.nav-icon, .nav-text {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  color: #ffffff;
+  -webkit-transition: top 0.5s;
+  -moz-transition: top 0.5s;
+  -ms-transition: top 0.5s;
+  -o-transition: top 0.5s;
+  transition: top 0.5s;
+}
+
+.big-pic {
+  position: absolute;
+  right: 52px;
+  bottom: 0;
+  display: inline-block;
+  width: 170px;
+  height: 210px;
+  background: url("../img/toolbar_img.png") no-repeat;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(0.01);
+  -moz-transform: scale(0.01);
+  -ms-transform: scale(0.01);
+  -o-transform: scale(0.01);
+  transform: scale(0.01);
+  -webkit-transform-origin: right bottom;
+  -moz-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  -o-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/*# sourceMappingURL=test02.css.map */

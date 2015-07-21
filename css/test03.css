@@ -1,0 +1,146 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?v5hufc");
+  src: url("fonts/icomoon.eot?#iefixv5hufc") format("embedded-opentype"), url("fonts/icomoon.ttf?v5hufc") format("truetype"), url("fonts/icomoon.woff?v5hufc") format("woff"), url("fonts/icomoon.svg?v5hufc#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class="nav-btn"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.top-back {
+  position: fixed;
+  left: 50%;
+  bottom: 15px;
+  width: 52px;
+  margin-left: -26px;
+}
+.nav-item {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+}
+.nav-item .nav-btn {
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.nav-item .nav-btn:before, .nav-item .nav-btn:after {
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  color: #ffffff;
+  text-align: center;
+  -webkit-transition: top 0.5s;
+  -moz-transition: top 0.5s;
+  -ms-transition: top 0.5s;
+  -o-transition: top 0.5s;
+  transition: top 0.5s;
+}
+.nav-item .nav-btn:before {
+  top: 0;
+  background-color: #d0d6d9;
+  line-height: 52px;
+  font-size: 28px;
+}
+.nav-item .nav-btn:after {
+  top: 52px;
+  padding-top: 4px;
+  background-color: #98a1a6;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.nav-item:nth-child(1):after, .nav-item:nth-child(3):after {
+  content: "";
+  display: inline-block;
+  width: 172px;
+  height: 200px;
+  position: absolute;
+  right: 47px;
+  bottom: 0;
+  background: url("../img/toolbar_img.png") no-repeat;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(0.01);
+  -moz-transform: scale(0.01);
+  -ms-transform: scale(0.01);
+  -o-transform: scale(0.01);
+  transform: scale(0.01);
+  -webkit-transform-origin: right bottom;
+  -moz-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  -o-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.nav-item:nth-child(1):hover:after, .nav-item:nth-child(3):hover:after {
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.nav-item:nth-child(1) .nav-btn:before {
+  content: "\e600";
+}
+.nav-item:nth-child(1) .nav-btn:after {
+  content: "意见\A反馈";
+}
+.nav-item:nth-child(1):after {
+  background-position: 0 0;
+}
+.nav-item:nth-child(2) .nav-btn:before {
+  content: "\e601";
+}
+.nav-item:nth-child(2) .nav-btn:after {
+  content: "APP\A下载";
+}
+.nav-item:nth-child(3) .nav-btn:before {
+  content: "\e602";
+}
+.nav-item:nth-child(3) .nav-btn:after {
+  content: "联系\A方式";
+}
+.nav-item:nth-child(3):after {
+  background-position: 0 -212px;
+}
+.nav-item:nth-child(4) .nav-btn:before {
+  content: "\e603";
+}
+.nav-item:nth-child(4) .nav-btn:after {
+  content: "微信\A聊天";
+}
+.nav-item:hover .nav-btn:before {
+  top: -52px;
+}
+.nav-item:hover .nav-btn:after {
+  top: 0;
+}
+
+/*# sourceMappingURL=test03.css.map */
